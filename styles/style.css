@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  inline-size: 1200px;
+  inline-size: 1216px;
   block-size: 100%;
   margin: auto;
   align-items: center;
@@ -86,7 +86,8 @@ ol {
 
 .search-form__label {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
+  align-items: center;  
   width: fit-content;
   cursor: pointer;
 }
@@ -111,7 +112,10 @@ input[type="checkbox"]:checked + span {
 }
 
 .search-form__textfield {
-  font-family: inherit; 
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
   color: inherit;
   background-color: transparent;
   border: none;
@@ -189,13 +193,13 @@ input[type="checkbox"]:checked + span {
 .content__details {
   display: flex;
   flex-direction: column;
-  max-width: 399px;
+  width: 415px;
   height: 100%;
   gap: 26px;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -231,6 +235,10 @@ input[type="checkbox"]:checked + span {
   text-decoration: underline;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -240,7 +248,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -248,6 +256,9 @@ input[type="checkbox"]:checked + span {
   color: #fff;
   padding-bottom: 6px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px; 
 }
 
 .content__video-card-description {
